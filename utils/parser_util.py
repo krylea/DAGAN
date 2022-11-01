@@ -8,6 +8,7 @@ class Bunch(object):
 def get_args():
     parser = argparse.ArgumentParser(description='Welcome to GAN-Shot-Learning script')
     parser.add_argument('--batch_size', nargs="?", type=int, default=32, help='batch_size for experiment')
+    parser.add_argument('--num_epochs', nargs="?", type=int, default=200, help='number of epochs')
     parser.add_argument('--discriminator_inner_layers', nargs="?", type=int, default=1,
                         help='Number of inner layers per multi layer in the discriminator')
     parser.add_argument('--generator_inner_layers', nargs="?", type=int, default=1,
